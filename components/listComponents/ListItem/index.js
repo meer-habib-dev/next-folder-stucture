@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import {
   todoSelector,
@@ -9,8 +9,22 @@ import SecondaryButton from "../../form/Button/SecondaryButton";
 import style from "./ListItem.module.css";
 
 const ListItem = () => {
+  const [message, setMessage] = useState(false);
   const dispatch = useDispatch();
   const { list } = useSelector(todoSelector);
+  console.log(list);
+  //   if (list.length === 0) {
+  //     setMessage(true);
+  //     // alert("There is not todos");
+  //   }
+  if (list.length === 0) {
+    return (
+      <div className="text-3xl bg-red-500 text-white h-20 text-center mt-20 w-full">
+        {" "}
+        <p>There is no Todos to Show!! Please Create One</p>{" "}
+      </div>
+    );
+  }
   return (
     <div>
       <div className={style["list-home"]}>
@@ -26,8 +40,12 @@ const ListItem = () => {
             <SecondaryButton onClick={(e) => dispatch(deleteTodoAction(index))}>
               Delete
             </SecondaryButton>
+            {!item && <p> this is sadfl</p>}
           </div>
         ))}
+        {/* {message && (
+          
+        )} */}
       </div>
     </div>
   );
