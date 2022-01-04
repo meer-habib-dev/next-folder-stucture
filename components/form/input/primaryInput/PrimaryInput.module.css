@@ -1,0 +1,7 @@
+.label{
+    @apply text-sm py-1 text-gray-700 font-bold;
+}
+
+.field{
+    @apply text-gray-800 text-lg my-1 py-3 px-2 focus:outline-none border-gray-400 shadow border rounded;
+}

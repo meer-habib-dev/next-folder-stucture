@@ -1,0 +1,4 @@
+.home-heading{
+    @apply py-4 text-gray-600 text-center text-lg font-bold;
+}
+

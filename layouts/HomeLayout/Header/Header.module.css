@@ -1,0 +1,10 @@
+.header-container-style {
+    @apply  bg-gray-700 py-3;
+}
+.logo{
+    @apply font-bold text-xl text-yellow-500 shadow px-4 py-2;
+}
+
+.link{
+    @apply mx-2 my-4 text-green-700 font-bold transition-all duration-300 hover:text-green-600;
+}

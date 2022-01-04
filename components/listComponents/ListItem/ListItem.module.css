@@ -1,0 +1,9 @@
+.list-home {
+  @apply container mt-10 mx-auto;
+}
+.list-item {
+  @apply my-4 p-4 flex items-center rounded bg-gray-100 shadow;
+}
+.list {
+  @apply cursor-pointer inline-block w-5 h-5 mr-4 border rounded transition-all duration-300;
+}

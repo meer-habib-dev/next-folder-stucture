@@ -1,0 +1,7 @@
+.footer-container{
+    @apply absolute bottom-0 left-0 w-full;
+}
+
+.footer-heading-tag{
+    @apply text-gray-300 shadow bg-gray-600 text-lg font-bold py-3 text-center;
+}
