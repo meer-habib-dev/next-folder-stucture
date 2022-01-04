@@ -19,7 +19,7 @@ const ListItem = () => {
   //   }
   if (list.length === 0) {
     return (
-      <div className="text-3xl bg-red-500 text-white h-20 text-center mt-20 w-full">
+      <div className={style["message"]}>
         {" "}
         <p>There is no Todos to Show!! Please Create One</p>{" "}
       </div>
